@@ -41,16 +41,8 @@
       backdrop-filter: blur(8px);
     }
 
-    h2 {
-      color: #facc15;
-      margin-bottom: 12px;
-    }
-
-    p {
-      color: #cbd5f5;
-      margin-bottom: 25px;
-      font-size: 15px;
-    }
+    h2 { color: #facc15; margin-bottom: 12px; }
+    p { color: #cbd5f5; margin-bottom: 25px; font-size: 15px; }
 
     button {
       width: 100%;
@@ -64,35 +56,17 @@
       transition: 0.15s;
     }
 
-    button:disabled {
-      opacity: 0.5;
-      cursor: not-allowed;
-    }
-
-    button:hover:not(:disabled) {
-      transform: scale(1.05);
-    }
+    button:disabled { opacity: 0.5; cursor: not-allowed; }
+    button:hover:not(:disabled) { transform: scale(1.05); }
 
     .sub { background: #dc2626; color: #fff; }
     .like { background: #2563eb; color: #fff; }
     .unlock { background: #16a34a; color: #fff; }
     .download { background: #facc15; color: #000; }
 
-    .step {
-      font-size: 13px;
-      color: #94a3b8;
-      min-height: 18px;
-    }
-
-    .hidden {
-      display: none;
-    }
-
-    .footer {
-      margin-top: 18px;
-      font-size: 12px;
-      color: #64748b;
-    }
+    .step { font-size: 13px; color: #94a3b8; min-height: 18px; }
+    .hidden { display: none; }
+    .footer { margin-top: 18px; font-size: 12px; color: #64748b; }
   </style>
 </head>
 
@@ -111,8 +85,9 @@
   <button class="unlock" id="btnConfirm" disabled>3️⃣ تأكيد</button>
   <div id="s3" class="step">⏳ انتظر الخطوات السابقة</div>
 
+  <!-- رابط التحميل -->
   <a id="download" class="hidden"
-     href="https://sendgb.com/yWUV8LwHInO"
+     href="https://www.sendgb.com/upload/?utm_source=eouPEKMTx8G"
      target="_blank">
     <button class="download">⬇ تحميل البرنامج</button>
   </a>
@@ -153,10 +128,7 @@
 
   btnSub.onclick = () => {
     if (s1) return;
-    window.open(
-      'https://www.youtube.com/@YHEAEBARON?sub_confirmation=1',
-      '_blank'
-    );
+    window.open('https://www.youtube.com/@YHEAEBARON?sub_confirmation=1', '_blank');
     requireLeave(8, () => {
       s1 = true;
       document.getElementById('s1').innerText = '✅ تم تنفيذ الشرط';
@@ -167,10 +139,7 @@
 
   btnLike.onclick = () => {
     if (!s1 || s2) return;
-    window.open(
-      'https://www.youtube.com/watch?v=Uhsg5RmdK6c',
-      '_blank'
-    );
+    window.open('https://www.youtube.com/watch?v=Uhsg5RmdK6c', '_blank');
     requireLeave(8, () => {
       s2 = true;
       document.getElementById('s2').innerText = '✅ تم تنفيذ الشرط';
@@ -197,3 +166,4 @@
 
 </body>
 </html>
+.
